@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<point 
+    xmlns="http://v8.1c.ru/8.2/virtual-resource-system"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    base="/int/sm"
+    ib="Srvr=1cfreshl.example;Ref=sm;">
+
+    <ws publishExtensionsByDefault="true"/>
+
+    <httpServices publishExtensionsByDefault="true">
+        <service 
+            name="Портал_ПолучениеТикетов"
+            rootUrl="tickets"
+            enable="true"/>
+        <service 
+            name="ExtAPI"
+            rootUrl="ext_api"
+            enable="true"/>
+        <service
+            name="ВедущаяСистемаОткрытойАвторизации"
+            rootUrl="oauth_leader"
+            reuseSessions="autouse"
+            sessionMaxAge="40"
+            poolTimeout="5"
+            poolSize="12"/>
+        <service
+            rootUrl="exchange"
+            enable="true"
+            reuseSessions="autouse"
+            sessionMaxAge="65"
+            poolSize="2"
+            poolTimeout="5"/>
+    </httpServices>	
+</point>

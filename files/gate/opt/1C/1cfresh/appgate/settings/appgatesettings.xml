@@ -1,0 +1,19 @@
+<Settings xmlns="http://general.settings.appgate.v8.1c.com/">
+    <dataLocation>/opt/1C/1cfresh/appgate/data/</dataLocation>
+    <listenAddress/>
+    <listenPort>8080</listenPort>
+    <manageAddress/>
+    <managePort>9090</managePort>
+    <appIdDepth>3</appIdDepth>
+    <backendIndex>0</backendIndex>
+    <backendHttpSettings>
+        <connectTimeout>5000</connectTimeout>
+        <readTimeout>75000</readTimeout>
+        <writeTimeout>0</writeTimeout>
+    </backendHttpSettings>
+    <manageHttpSettings>
+        <readTimeout>75000</readTimeout>
+        <writeTimeout>75000</writeTimeout>
+    </manageHttpSettings>
+    <invalidApplicationStatus>420</invalidApplicationStatus>
+</Settings>
